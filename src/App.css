@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+body{
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  background-color: black;
+}
+
+h1{
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  background-color:rgb(249, 249, 241);
+  color: red;
+}
+.d-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 90px);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.gap-10{
+  gap: 100px;
+}
+
+.totalScore{
+  font-size: 60px;
+  color: gold;
+  margin-top: 150px;
+}
+
+.totalScore p {
+  margin: 0;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +80,18 @@
 
 .read-the-docs {
   color: #888;
+}
+.restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.restart-button:hover {
+  background-color: #218838;
 }
