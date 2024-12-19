@@ -1,38 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-body{
+body {
   font-family: "Play", sans-serif;
   font-weight: bold;
   font-style: normal;
-  background-color: black;
+  background-color: rgb(30, 30, 60);
+  color: white;
 }
 
-h1{
+h1 {
   font-family: "Play", sans-serif;
   font-weight: bold;
   font-style: normal;
-  background-color:rgb(249, 249, 241);
-  color: red;
+  background-color: rgb(245, 245, 245);
+  color: rgb(30, 144, 255);
+  padding: 10px;
+  border-radius: 8px;
 }
-.d-grid{
+
+.d-grid {
   display: grid;
   grid-template-columns: repeat(5, 90px);
   row-gap: 10px;
   column-gap: 10px;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gap-10{
-  gap: 100px;
+.gap-10 {
+  gap: 50px;
 }
 
-.totalScore{
-  font-size: 60px;
-  color: gold;
-  margin-top: 150px;
+.totalScore {
+  font-size: 50px;
+  color: #ffd700;
+  margin-top: 100px;
 }
 
 .totalScore p {
@@ -46,52 +52,23 @@ h1{
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
-  color: #888;
+  color: #ff4500;
 }
+
 .restart-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #28a745;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
 .restart-button:hover {
-  background-color: #218838;
+  background-color: #45a049;
 }
