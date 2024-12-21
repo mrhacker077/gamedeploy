@@ -16,6 +16,7 @@ h1 {
   color: rgb(30, 144, 255);
   padding: 10px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .d-grid {
@@ -23,12 +24,14 @@ h1 {
   grid-template-columns: repeat(5, 90px);
   row-gap: 10px;
   column-gap: 10px;
+  justify-content: center;
 }
 
 .d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .gap-10 {
@@ -38,7 +41,7 @@ h1 {
 .totalScore {
   font-size: 50px;
   color: #ffd700;
-  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .totalScore p {
@@ -92,14 +95,18 @@ h1 {
   }
 
   .d-grid {
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(5, 60px); /* Maintain 5 columns and reduce square size */
     row-gap: 8px;
     column-gap: 8px;
   }
 
+  .d-grid > div {
+    width: 60px; /* Ensure squares resize properly */
+    height: 60px;
+  }
+
   .totalScore {
     font-size: 40px;
-    margin-top: 50px;
   }
 
   .restart-button {
@@ -120,14 +127,19 @@ h1 {
   }
 
   .d-grid {
-    grid-template-columns: repeat(2, 70px);
+    grid-template-columns: repeat(5, 50px); /* Maintain 5 columns and further reduce square size */
     row-gap: 5px;
     column-gap: 5px;
   }
 
+  .d-grid > div {
+    width: 50px; /* Ensure squares resize properly */
+    height: 50px;
+  }
+
   .totalScore {
     font-size: 30px;
-    margin-top: 30px;
+    margin-bottom: 15px;
   }
 
   .restart-button {
