@@ -10,7 +10,7 @@ function getRandomInt(min, max) {
 
 function generateRandomNumbers() {
     let randomNumbers = [];
-    while (randomNumbers.length < 3) {
+    while (randomNumbers.length < 1) {
         let randomNumber = getRandomInt(1, 25);
         if (!randomNumbers.includes(randomNumber)) {
             randomNumbers.push(randomNumber);

@@ -52,7 +52,6 @@ h1 {
   text-align: center;
 }
 
-
 .read-the-docs {
   color: #ff4500;
 }
@@ -72,6 +71,7 @@ h1 {
 .restart-button:hover {
   background-color: #45a049;
 }
+
 .game-message {
   position: absolute;
   top: 50%;
@@ -82,4 +82,61 @@ h1 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .d-grid {
+    grid-template-columns: repeat(3, 80px);
+    row-gap: 8px;
+    column-gap: 8px;
+  }
+
+  .totalScore {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  .restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .game-message {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+
+  .d-grid {
+    grid-template-columns: repeat(2, 70px);
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+
+  .totalScore {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .restart-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .game-message {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
 }
